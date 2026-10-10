@@ -268,10 +268,19 @@ gtk-update-icon-cache -f ~/.local/share/icons/Everforest-Light
 # Settings → Desktop → Appearance → Icons → Everforest-Light
 ```
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers),
-folder [`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek)
-(mirrored from the upstream theme, MIT, licence in the folder). All are ink
-drawings on the same stone grey as the theme:
+Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
+
+Two wallpapers made for this rice, recoloured from the COSMIC astronaut and the
+Harbor Dark reaper so they sit on the exact window background:
+
+| File | What it is |
+|------|------------|
+| [`cosmic-astronaut-dossier-3840x2160.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-dossier-3840x2160.png) | COSMIC astronaut in olive with orange lines on stone grey |
+| [`reaper-skull-dossier-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/reaper/reaper-skull-dossier-3440x1440.png) | Reaper in khaki and rust on stone grey |
+
+From the upstream theme, folder
+[`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek)
+(MIT, licence in the folder), all ink drawings on the same stone grey as the theme:
 
 | File | What it is |
 |------|------------|
