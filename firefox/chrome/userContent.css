@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Dossier - userContent.css
+   Based on Cosmic Night v2 (variables only)
+
+   Color only. No size / position changes.
+
+   Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
+   ========================================================================== */
+
+@-moz-document url-prefix("about:newtab"),
+               url-prefix("about:home"),
+               url-prefix("about:privatebrowsing") {
+
+  :root {
+    --newtab-primary-action-background: #953B19 !important;
+    --newtab-primary-action-background-dimmed: rgba(149, 59, 25, 0.25) !important;
+
+    --newtab-focus-border: #953B19 !important;
+    --newtab-focus-outline: #953B19 !important;
+    --newtab-textbox-focus-color: #953B19 !important;
+
+    --in-content-accent-color: #953B19 !important;
+    --in-content-accent-color-active: #51573B !important;
+    --in-content-focus-outline-color: #953B19 !important;
+
+    --link-color: #43432B !important;
+    --link-color-hover: #242424 !important;
+  }
+}

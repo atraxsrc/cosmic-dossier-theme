@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Dossier palette on stone grey (lsd 1.0.0 does
+# not accept #hex here): 130 rust, 58 olive, 88 red, 95 brown, 240 khaki-dark,
+# 241 muted, 245 dim.
+user: 130
+group: 241
+permission:
+  read: 241
+  write: 95
+  exec: 88
+  exec-sticky: 88
+  no-access: 245
+  octal: 240
+  acl: 240
+  context: 240
+date:
+  hour-old: 130
+  day-old: 58
+  older: 245
+size:
+  none: 245
+  small: 58
+  medium: 95
+  large: 88
+inode:
+  valid: 58
+  invalid: 88
+links:
+  valid: 240
+  invalid: 88
+tree-edge: 245
+git-status:
+  default: 245
+  unmodified: 245
+  ignored: 245
+  new-in-index: 58
+  new-in-workdir: 58
+  typechange: 95
+  deleted: 88
+  renamed: 240
+  modified: 130
+  conflicted: 88

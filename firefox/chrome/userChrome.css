@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Dossier - userChrome.css
+   Based on Cosmic Night v4 (minimal + scoped)
+
+   Colors from the COSMIC Dossier palette (light):
+     bg #D0D0C8  elevated #DCDCD4  text #242424
+     gold #953B19  olive #51573B  border #BCBCB4
+     hover #C4C4BC  pressed #BCBCB4
+
+   No :root overrides - variables stay on the popup they belong to.
+
+   Install:
+     1. about:config -> toolkit.legacyUserProfileCustomizations.stylesheets = true
+     2. about:support -> Profile Directory -> Open Directory
+     3. put this file at  chrome/userChrome.css
+     4. FULL restart
+   ========================================================================== */
+
+/* ---------- rounded corners: URL bar + search ---------- */
+#urlbar-background,
+#searchbar {
+  border-radius: 10px !important;
+  border-color: #953B19 !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background {
+  box-shadow: 0 0 10px -3px #953B19 !important;
+}
+
+/* ---------- rounded corners: tabs ---------- */
+.tabbrowser-tab .tab-background {
+  border-radius: 10px !important;
+  margin-inline: 2px !important;
+  margin-block: 3px !important;
+}
+
+/* ---------- rounded corners: urlbar dropdown ---------- */
+.urlbarView-row {
+  border-radius: 7px !important;
+  margin-inline: 3px !important;
+}
+
+/* ---------- rounded corners: toolbar buttons ---------- */
+toolbarbutton .toolbarbutton-icon {
+  border-radius: 7px !important;
+}
+
+/* ==========================================================================
+   MENU COLORS - scoped to the popups only.
+   ========================================================================== */
+
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+menupopup {
+  --panel-background: #DCDCD4 !important;
+  --panel-color: #242424 !important;
+  --panel-border-color: #BCBCB4 !important;
+  --panel-border-radius: 10px !important;
+  --panel-separator-color: #BCBCB4 !important;
+  --panel-item-hover-bgcolor: #C4C4BC !important;
+  --panel-item-active-bgcolor: #BCBCB4 !important;
+
+  --arrowpanel-background: #DCDCD4 !important;
+  --arrowpanel-color: #242424 !important;
+  --arrowpanel-border-color: #BCBCB4 !important;
+  --arrowpanel-dimmed: #C4C4BC !important;
+  --arrowpanel-dimmed-further: #BCBCB4 !important;
+}
+
+/* rounded menu rows */
+#appMenu-popup .subviewbutton,
+#widget-overflow .subviewbutton,
+menupopup menuitem,
+menupopup menu {
+  border-radius: 7px !important;
+  margin-inline: 4px !important;
+}
+
+/* hover: solid row, no inset ring (no inset ring) */
+#appMenu-popup .subviewbutton:not([disabled]):hover,
+#widget-overflow .subviewbutton:not([disabled]):hover,
+menupopup menuitem:not([disabled]):hover,
+menupopup menu:not([disabled]):hover,
+menupopup menuitem[_moz-menuactive="true"],
+menupopup menu[_moz-menuactive="true"] {
+  background-color: #C4C4BC !important;
+  color: #242424 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* separators */
+#appMenu-popup toolbarseparator,
+menupopup menuseparator {
+  border-top: 1px solid #BCBCB4 !important;
+}
+
+/* ---------- hamburger / overflow / identity shells ----------
+   Context menus are NOT given an extra element border; native
+   --panel-border-color already draws one. Double borders were
+   making the right-click panel look detached. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup {
+  border: 1px solid #BCBCB4 !important;
+  border-radius: 10px !important;
+  background-color: #DCDCD4 !important;
+  padding: 0 !important;
+}
+
+#appMenu-popup panelmultiview,
+#appMenu-popup panelview,
+#appMenu-popup .panel-subview-body,
+#appMenu-multiView,
+#widget-overflow .panel-subview-body {
+  border-radius: 10px !important;
+  background-color: #DCDCD4 !important;
+}
