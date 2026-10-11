@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pop!_OS · COSMIC · Dossier
+# COSMIC · Dossier
 
 Pop!_OS 24.04 on COSMIC in stone grey, olive and rust: desktop, terminal,
 shell, Firefox, cursor, wallpapers. The light half of a pair; the dark half is
