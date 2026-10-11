@@ -269,14 +269,15 @@ gtk-update-icon-cache -f ~/.local/share/icons/Everforest-Light
 ```
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
-
-Two wallpapers made for this rice, recoloured from the COSMIC astronaut and the
-Harbor Dark reaper so they sit on the exact window background:
+This rice's own set is in [`cosmic/dossier/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier):
 
 | File | What it is |
 |------|------------|
-| [`cosmic-astronaut-dossier-3840x2160.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-dossier-3840x2160.png) | COSMIC astronaut in olive with orange lines on stone grey |
-| [`reaper-skull-dossier-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/reaper/reaper-skull-dossier-3440x1440.png) | Reaper in khaki and rust on stone grey |
+| [`dossier-eagle-3584x2016.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-eagle-3584x2016.png) | Ink eagle head with rust splashes on stone grey |
+| [`dossier-samurai-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-samurai-3744x2112.png) | Ink samurai with a crow, rust accents |
+| [`dossier-anime-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-anime-3744x2112.png) | Ink portrait, grey hair, rust accents |
+| [`dossier-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-reaper-skull-3440x1440.png) | Harbor Dark reaper in khaki and rust |
+
 
 From the upstream theme, folder
 [`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek)
@@ -318,7 +319,7 @@ mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 
 # wallpaper
 # Settings → Wallpaper → Add image → a file from
-# https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek
+# https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier
 
 # icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
