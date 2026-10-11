@@ -15,6 +15,7 @@ shell, Firefox, cursor, wallpapers. The light half of a pair; the dark half is
 </div>
 
 ---
+![Pop!_OS COSMIC desktop with the Dossier theme](assets/screenshot.png)
 
 ## Palette
 
@@ -85,7 +86,10 @@ window hint, the terminal cursor and btop highlights.
 ├── zsh
 │   ├── dossier.zsh              # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
-├── assets/cursors               # cursor preview
+├── assets
+│   ├── cursors/                 # cursor preview
+│   ├── screenshot.png           # README screenshot
+│   └── wallpaper.png            # the samurai on the bare desktop
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
@@ -295,7 +299,7 @@ This rice's own set is in [`cosmic/dossier/`](https://github.com/atraxsrc/cool-w
 | File | What it is |
 |------|------------|
 | [`dossier-eagle-3584x2016.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-eagle-3584x2016.png) | Ink eagle head with rust splashes on stone grey |
-| [`dossier-samurai-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-samurai-3744x2112.png) | Ink samurai with a crow, rust accents |
+| [`dossier-samurai-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-samurai-3744x2112.png) | Ink samurai with a crow, rust accents, the one in the screenshot |
 | [`dossier-anime-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-anime-3744x2112.png) | Ink portrait, grey hair, rust accents |
 | [`dossier-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-reaper-skull-3440x1440.png) | Harbor Dark reaper in khaki and rust |
 
@@ -311,6 +315,8 @@ From the upstream theme, folder
 | [`the-greek-bg2-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg2-3840x2160.jpg) | Ink portrait, grey hair |
 
 `bg1-1` to `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → the file you downloaded.
+
+![The samurai wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
 ---
 

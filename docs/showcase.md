@@ -42,8 +42,8 @@ flowchart LR
 - [x] `./cosmic/install.sh` for fonts, **Everforest-Light** icons and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-16-Silver-Grey
-- [ ] Wallpaper: `cool-wallpapers/cosmic/dossier/dossier-eagle`
-- [ ] Screenshot for the README
+- [x] Wallpaper: `cool-wallpapers/cosmic/dossier/dossier-samurai`
+- [x] Screenshot for the README
 
 ## The baseline every rice shares
 
