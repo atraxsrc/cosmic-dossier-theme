@@ -103,7 +103,8 @@ Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/Dos
 Accent is rust `#953B19`; the window hint border is the brighter `#DE6A41`.
 Use the `+` control if you want a custom swatch.
 
-Frosted glass is on in the `.ron` at `frosted: VeryLow` for windows, panel,
+Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
+0.66 to 0.96, tinted with the palette's middle neutral, for windows, panel,
 applets and system UI (maximized apps stay solid), and corners are squared
 (`radius_*: 2.0`), the same as the DarkGold baseline. Adjust frosted glass on
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
