@@ -79,6 +79,7 @@ window hint, the terminal cursor and btop highlights.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
 │   └── update_system.sh         # nala + flatpak, dark ANSI for a light terminal
 ├── zsh
@@ -244,6 +245,23 @@ to `config.jsonc.bak`.
 fastfetch
 ```
 
+### Neovim
+
+`nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
+the palette (`nvim/colors/dossier.lua`), a LazyVim spec that selects it and makes
+sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/dossier.lua`), and a small RON syntax file so `cosmic/*.ron`
+is coloured even before the parser exists. `:terminal` inside Neovim uses the
+Dossier scheme.
+
+```bash
+./nvim/install.sh
+# restart nvim; LazyVim switches to the dossier colorscheme
+```
+
+Without LazyVim, copy `nvim/colors/dossier.lua` to `~/.config/nvim/colors/` and
+run `:colorscheme dossier`.
+
 ### btop
 
 `btop/Dossier.theme`: stone background, dark olive boxes, orange highlights,
@@ -317,6 +335,7 @@ cd cosmic-dossier-theme
 ./zsh/install.sh
 ./lsd/install.sh
 ./fastfetch/install.sh
+./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 
 # wallpaper
