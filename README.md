@@ -165,7 +165,14 @@ deeper, dim colours lighter, so bold and dim still read on a light background.
 
 ## Firefox
 
-Built-in **Light** theme plus the stylesheets in `firefox/chrome/`.
+Two layers:
+
+1. **Theme (colours):** install
+   **[cosmic-dossier-theme on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/cosmic-dossier-theme/)**.
+   This is the main look.
+2. **Stylesheets (optional):** `firefox/chrome/` adds rounded corners, rust
+   menu hover, rust accents and blank new-tab tiles on top of the add-on
+   (they also work with Firefox's built-in Light theme):
 
 ```bash
 ./firefox/install.sh
@@ -342,7 +349,10 @@ cd cosmic-dossier-theme
 # terminal
 # View → Color schemes → Light tab → Import cosmic-term/Dossier-term.ron
 
-# firefox
+# firefox add-on
+# https://addons.mozilla.org/en-US/firefox/addon/cosmic-dossier-theme/
+
+# optional extra chrome
 ./firefox/install.sh
 
 # cursor (then reboot), see cursors/README.md
