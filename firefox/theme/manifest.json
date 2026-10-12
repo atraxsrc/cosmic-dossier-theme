@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Cosmic Dossier",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Stone-paper light theme from the COSMIC Dossier rice: olive icons, one rust accent.",
   "browser_specific_settings": {
     "gecko": {
@@ -24,6 +24,8 @@
       "toolbar_field": "#e4e4dc",
       "toolbar_field_text": "#242424",
       "toolbar_field_border_focus": "#953b19",
+      "toolbar_field_highlight": "#953b19",
+      "toolbar_field_highlight_text": "#e4e4dc",
       "tab_line": "#953b19",
       "popup": "#dcdcd4",
       "popup_text": "#242424",
