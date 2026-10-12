@@ -66,6 +66,8 @@ window hint, the terminal cursor and btop highlights.
 │   ├── install.sh
 │   ├── uninstall.sh
 │   └── README.md
+├── icons
+│   └── install.sh               # Cosmic-Dossier icon pack from cosmic-icon-themes
 ├── fastfetch
 │   ├── config.jsonc             # rust / khaki fastfetch config
 │   ├── cosmic.txt               # COSMIC logo
@@ -129,12 +131,12 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
-| Icons | Everforest-Light |
+| Icons | Cosmic-Dossier-Rust |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Dossier (light scheme) |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
-icons (see Icons below) and import the terminal scheme first, then:
+Cosmic-Dossier icons (see Icons below) and import the terminal scheme first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -283,16 +285,21 @@ cp btop/Dossier.theme ~/.config/btop/themes/
 
 ## Icons and wallpaper
 
-Icons: **Everforest-Light** from
-[Fausto-Korpsvart/Everforest-GTK-Theme](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme):
+Icons: **Cosmic-Dossier**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
+by Fausto Korpsvart recolored to this palette in
+[cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
+three colors: **Rust** `#953B19` (default), **Olive** `#51573B` and **Ink** `#242424` with orange symbols.
+
+![Cosmic-Dossier folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-Dossier.png)
 
 ```bash
-git clone --depth 1 https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme.git
-mkdir -p ~/.local/share/icons
-cp -r Everforest-GTK-Theme/icons/Everforest-Light ~/.local/share/icons/
-gtk-update-icon-cache -f ~/.local/share/icons/Everforest-Light
-# Settings → Desktop → Appearance → Icons → Everforest-Light
+./icons/install.sh                  # Rust folders
+./icons/install.sh --variant Olive  # or Ink
 ```
+
+It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
+installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
+Restart open apps afterwards (Files caches icons per window).
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
 This rice's own set is in [`cosmic/dossier/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier):
@@ -350,7 +357,8 @@ mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 # Settings → Wallpaper → Add image → a file from
 # https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier
 
-# icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
+./icons/install.sh                  # icons (see Icons above)
+# Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
 ```
@@ -367,7 +375,7 @@ mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
-| [Everforest-GTK-Theme](https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme) | Icon pack (Everforest-Light) |
+| [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-Dossier), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 | [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor (silver grey) |
 
 ## Credits

@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Everforest-Light icons installed, and the Dossier
+Done. Needs the Maple fonts and Cosmic-Dossier icons (./icons/install.sh) installed, and the Dossier
 terminal scheme imported, or COSMIC falls back to its defaults.
 EOF
