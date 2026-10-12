@@ -93,6 +93,7 @@ window hint, the terminal cursor and btop highlights.
 │   ├── cursors/                 # cursor preview
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the samurai on the bare desktop
+├── backgrounds/                 # wallpapers, dossier-<subject>.png (see Icons and wallpaper)
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
@@ -310,18 +311,19 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers).
-This rice's own set is in [`cosmic/dossier/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier):
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
+four pieces rendered in this palette. The eagle, the samurai and the portrait are
+The Greek subjects, the reaper is from Harbor Dark (both
+[HANCORE-linux](https://github.com/HANCORE-linux), MIT).
 
-| File | What it is |
-|------|------------|
-| [`dossier-eagle-3584x2016.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-eagle-3584x2016.png) | Ink eagle head with rust splashes on stone grey |
-| [`dossier-samurai-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-samurai-3744x2112.png) | Ink samurai with a crow, rust accents, the one in the screenshot |
-| [`dossier-anime-3744x2112.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-anime-3744x2112.png) | Ink portrait, grey hair, rust accents |
-| [`dossier-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/dossier/dossier-reaper-skull-3440x1440.png) | Harbor Dark reaper in khaki and rust |
+| File | Size | What it is |
+|------|------|------------|
+| [`dossier-eagle.png`](backgrounds/dossier-eagle.png) | 3584x2016 | Ink eagle head with rust splashes on stone grey |
+| [`dossier-samurai.png`](backgrounds/dossier-samurai.png) | 3744x2112 | Ink samurai with a crow, rust accents, the one in the screenshot |
+| [`dossier-anime.png`](backgrounds/dossier-anime.png) | 3744x2112 | Ink portrait, grey hair, rust accents |
+| [`dossier-reaper-skull.png`](backgrounds/dossier-reaper-skull.png) | 3440x1440 | Harbor Dark reaper in khaki and rust |
 
-
-From the upstream theme, folder
+More from the upstream theme, in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers) folder
 [`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek)
 (MIT, licence in the folder), all ink drawings on the same stone grey as the theme:
 
@@ -331,7 +333,7 @@ From the upstream theme, folder
 | [`the-greek-bg3-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg3-3840x2160.jpg) | Ink samurai with a crow |
 | [`the-greek-bg2-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg2-3840x2160.jpg) | Ink portrait, grey hair |
 
-`bg1-1` to `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → the file you downloaded.
+`bg1-1` to `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
 ![The samurai wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
@@ -366,8 +368,7 @@ cd cosmic-dossier-theme
 mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 
 # wallpaper
-# Settings → Wallpaper → Add image → a file from
-# https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic/dossier
+# Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then
@@ -394,7 +395,8 @@ mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 
 - Palette and wallpapers: [omarchy-thegreek-theme](https://github.com/HANCORE-linux/omarchy-thegreek-theme)
   by HANCORE-linux (MIT). This repo is a COSMIC port with contrast-adjusted
-  text colours; the wallpapers are mirrored in cool-wallpapers, not here.
+  text colours; the upstream wallpapers are mirrored in cool-wallpapers, the
+  renders for this palette are in `backgrounds/`.
 - Dark half: [cosmic-noir-theme](https://github.com/atraxsrc/cosmic-noir-theme).
   Shared baseline (frosted glass, squared corners, fonts) from
   [cosmic-darkgold-theme](https://github.com/atraxsrc/cosmic-darkgold-theme).

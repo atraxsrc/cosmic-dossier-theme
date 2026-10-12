@@ -42,7 +42,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-Dossier** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-16-Silver-Grey
-- [x] Wallpaper: `cool-wallpapers/cosmic/dossier/dossier-samurai`
+- [x] Wallpaper: `backgrounds/dossier-samurai.png`
 - [x] Screenshot for the README
 
 ## The baseline every rice shares
