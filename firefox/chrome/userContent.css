@@ -1,8 +1,13 @@
 /* ==========================================================================
    Dossier - userContent.css
-   Based on Cosmic Night v2 (variables only)
+   Ported from the DarkGold baseline, recoloured for the COSMIC Dossier
+   palette (light)
 
-   Color only. No size / position changes.
+   New tab / home / private pages only:
+     - rust accent and focus, khaki links
+     - rust focus ring on shortcut tiles, rust personalize button
+     - shortcut artwork hidden (tiles stay, icons go blank)
+   No size / position changes.
 
    Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
    ========================================================================== */
@@ -15,6 +20,10 @@
     --newtab-primary-action-background: #953B19 !important;
     --newtab-primary-action-background-dimmed: rgba(149, 59, 25, 0.25) !important;
 
+    --color-accent-primary: #953B19 !important;
+    --color-accent-primary-hover: #754E3E !important;
+    --color-accent-primary-active: #754E3E !important;
+
     --newtab-focus-border: #953B19 !important;
     --newtab-focus-outline: #953B19 !important;
     --newtab-textbox-focus-color: #953B19 !important;
@@ -25,5 +34,35 @@
 
     --link-color: #43432B !important;
     --link-color-hover: #242424 !important;
+
+    --focus-outline-color: #953B19 !important;
+    --focus-outline: 2px solid #953B19 !important;
+    --newtab-button-focus-border: #953B19 !important;
+    --button-background-color: #953B19 !important;
+    --button-text-color: #E4E4DC !important;
+  }
+
+  .top-site-outer:is(:focus, :focus-visible, .active) .tile,
+  .top-site-outer .top-site-button:focus .tile,
+  .top-site-outer .top-site-button:focus-visible .tile {
+    outline: 2px solid #953B19 !important;
+    border-color: #953B19 !important;
+  }
+
+  .personalize-button {
+    background-color: #953B19 !important;
+    color: #E4E4DC !important;
+  }
+
+  /* Hide shortcut artwork so tiles stay blank */
+  .top-site-icon,
+  .top-site-icon.rich-icon,
+  .top-site-icon.default-icon,
+  .screenshot,
+  .screenshot.active,
+  .letter-fallback {
+    background-image: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
   }
 }

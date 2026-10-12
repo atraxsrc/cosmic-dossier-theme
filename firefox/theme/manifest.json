@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Dossier",
+  "version": "1.0",
+  "description": "Stone-paper light theme from the COSMIC Dossier rice: olive icons, one rust accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d799b29e-89e9-46ab-b073-59586ec70b35}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#dcdcd4",
+      "toolbar_text": "#242424",
+      "frame": "#d0d0c8",
+      "tab_background_text": "#59574d",
+      "toolbar_field": "#e4e4dc",
+      "toolbar_field_text": "#242424",
+      "toolbar_field_border_focus": "#953b19",
+      "tab_line": "#953b19",
+      "popup": "#dcdcd4",
+      "popup_text": "#242424",
+      "button_background_active": "#953b19",
+      "button_background_hover": "#c4c4bc",
+      "frame_inactive": "#d0d0c8",
+      "icons_attention": "#953b19",
+      "icons": "#51573b",
+      "ntp_background": "#d0d0c8",
+      "ntp_text": "#242424",
+      "popup_border": "#98988f",
+      "popup_highlight_text": "#e4e4dc",
+      "popup_highlight": "#953b19",
+      "sidebar_border": "#bcbcb4",
+      "sidebar_highlight_text": "#e4e4dc",
+      "sidebar_highlight": "#953b19",
+      "sidebar_text": "#242424",
+      "tab_loading": "#953b19"
+    }
+  }
+}

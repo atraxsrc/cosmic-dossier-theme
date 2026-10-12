@@ -71,9 +71,10 @@ window hint, the terminal cursor and btop highlights.
 │   ├── cosmic.txt               # COSMIC logo
 │   └── install.sh
 ├── firefox
+│   ├── theme                    # Cosmic Dossier theme add-on (manifest + icons)
 │   ├── chrome
-│   │   ├── userChrome.css       # rounded chrome, paper menus
-│   │   └── userContent.css      # new tab accent
+│   │   ├── userChrome.css       # rounded chrome, paper menus, rust hover
+│   │   └── userContent.css      # new tab accents, blank tiles
 │   ├── install.sh
 │   └── README.md
 ├── lsd
