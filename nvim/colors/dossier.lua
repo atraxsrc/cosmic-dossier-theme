@@ -1,11 +1,12 @@
 -- Dossier colorscheme for Neovim, part of cosmic-dossier-theme.
--- Generated from the rice palette: the editor background is the window
--- background, text is the rice text colour, and syntax roles follow the
--- COSMIC Terminal scheme (Dossier). No plugin needed: drop it in
+-- Generated from the rice palette: the editor background is the terminal
+-- pane (#C7C7C0, floats on the window stone), text is the rice text colour,
+-- and syntax roles follow the COSMIC Terminal scheme (Dossier). No plugin
+-- needed: drop it in
 -- ~/.config/nvim/colors/ and :colorscheme dossier.
 
 local p = {
-  bg = "#D0D0C8", bg1 = "#DCDCD4", bg2 = "#C4C4BC",
+  bg = "#C7C7C0", bg1 = "#D0D0C8", bg2 = "#BBBBB4",
   fg = "#242424", muted = "#59574D", dim = "#6B7360",
   accent = "#953B19", success = "#51573B", warning = "#754E3E", error = "#A80026",
   kw = "#953B19", fn = "#43432B", str = "#51573B", num = "#754E3E", typ = "#6B1F2F",

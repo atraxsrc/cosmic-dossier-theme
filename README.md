@@ -213,9 +213,9 @@ Previews, what the script touches, how to undo it and how the colours are made:
 
 ### `update_system.sh`
 
-nala + flatpak updater. Headers in rust, info in khaki, success in olive,
-errors in red; the banner ramps from dark olive to rust. All dark enough for a
-light terminal.
+nala + flatpak updater. Headers in olive-black, info in khaki, success in
+olive, errors in red; the banner ramps from olive-black to khaki. All dark
+enough for a light terminal.
 
 ```bash
 chmod +x scripts/update_system.sh

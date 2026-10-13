@@ -12,7 +12,7 @@ set -eo pipefail
 
 # Dossier - using $'...' so escape bytes are stored at assignment time
 # and work correctly with both echo -e and printf "%s"
-EDGE=$'\033[38;2;149;59;25m'      # #953B19  - section headers, logo rule (rust)
+EDGE=$'\033[38;2;46;49;37m'       # #2E3125  - section headers, logo rule (olive-black)
 CONTROL=$'\033[38;2;67;67;43m'    # #43432B  - info / commands (khaki)
 HIGH=$'\033[38;2;81;87;59m'      # #51573B  - success (olive)
 ACCENT=$'\033[38;2;117;78;62m'    # #754E3E  - warnings, logo rule (brown)
@@ -135,17 +135,17 @@ LOGO_ROWS=(
     ' ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝  ╚═══╝   ╚═╝'
 )
 
-# Per-column colours for the banner: dark olive → rust, left to right.
-# Dark enough to read on the stone grey terminal. One entry per column, 46 total.
+# Per-column colours for the banner: olive-black → khaki, left to right.
+# Ink like the fastfetch logo; rust stays for small text. One entry per column, 46 total.
 LOGO_GRAD=(
-    "46;49;37" "48;49;37" "51;49;36" "53;50;36" "55;50;36" "57;50;36"
-    "60;50;35" "62;51;35" "64;51;35" "67;51;35" "69;51;34" "71;51;34"
-    "73;52;34" "76;52;34" "78;52;33" "80;52;33" "83;53;33" "85;53;32"
-    "87;53;32" "89;53;32" "92;53;32" "94;54;31" "96;54;31" "99;54;31"
-    "101;54;31" "103;55;30" "106;55;30" "108;55;30" "110;55;30" "112;55;29"
-    "115;56;29" "117;56;29" "119;56;28" "122;56;28" "124;57;28" "126;57;28"
-    "128;57;27" "131;57;27" "133;57;27" "135;58;27" "138;58;26" "140;58;26"
-    "142;58;26" "144;59;26" "147;59;25" "149;59;25"
+    "46;49;37" "46;49;37" "47;50;37" "47;50;37" "48;51;38" "48;51;38"
+    "49;51;38" "49;52;38" "50;52;38" "50;53;38" "51;53;38" "51;53;38"
+    "52;54;39" "52;54;39" "53;55;39" "53;55;39" "53;55;39" "54;56;39"
+    "54;56;39" "55;57;40" "55;57;40" "56;57;40" "56;58;40" "57;58;40"
+    "57;59;40" "58;59;40" "58;59;40" "59;60;41" "59;60;41" "60;61;41"
+    "60;61;41" "60;61;41" "61;62;41" "61;62;41" "62;63;42" "62;63;42"
+    "63;63;42" "63;64;42" "64;64;42" "64;65;42" "65;65;42" "65;65;42"
+    "66;66;43" "66;66;43" "67;67;43" "67;67;43"
 )
 
 # Draw the banner one character at a time, colouring by column index so the
