@@ -41,7 +41,7 @@ flowchart LR
 - [x] Import `cosmic-term/Dossier-term.ron`, pick **Dossier** for the profile
 - [x] `./icons/install.sh` for the **Cosmic-Dossier** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
-- [x] Cursor: Oxygen-16-Silver-Grey
+- [x] Cursor: Oxygen-Dossier-Rust
 - [x] Wallpaper: `backgrounds/dossier-samurai.png`
 - [x] Screenshot for the README
 
