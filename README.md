@@ -313,28 +313,13 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
-four pieces rendered in this palette. The eagle, the samurai and the portrait are
-The Greek subjects, the reaper is from Harbor Dark (both
-[HANCORE-linux](https://github.com/HANCORE-linux), MIT).
+The Greek eagle, samurai (the one in the screenshot) and ink portrait, and the Harbor
+Dark reaper, rendered in khaki and rust on stone grey. The subjects come from
+[HANCORE-linux](https://github.com/HANCORE-linux) (MIT). More from the upstream theme in cool-wallpapers, folder
+[`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek) (MIT), all ink drawings on
+the same stone grey as the theme.
 
-| File | Size | What it is |
-|------|------|------------|
-| [`dossier-eagle.png`](backgrounds/dossier-eagle.png) | 3584x2016 | Ink eagle head with rust splashes on stone grey |
-| [`dossier-samurai.png`](backgrounds/dossier-samurai.png) | 3744x2112 | Ink samurai with a crow, rust accents, the one in the screenshot |
-| [`dossier-anime.png`](backgrounds/dossier-anime.png) | 3744x2112 | Ink portrait, grey hair, rust accents |
-| [`dossier-reaper-skull.png`](backgrounds/dossier-reaper-skull.png) | 3440x1440 | Harbor Dark reaper in khaki and rust |
-
-More from the upstream theme, in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers) folder
-[`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek)
-(MIT, licence in the folder), all ink drawings on the same stone grey as the theme:
-
-| File | What it is |
-|------|------------|
-| [`the-greek-bg1-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg1-3840x2160.jpg) | Ink eagle head |
-| [`the-greek-bg3-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg3-3840x2160.jpg) | Ink samurai with a crow |
-| [`the-greek-bg2-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg2-3840x2160.jpg) | Ink portrait, grey hair |
-
-`bg1-2` and `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
+Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
 ![The samurai wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
