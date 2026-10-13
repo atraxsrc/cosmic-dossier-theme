@@ -314,8 +314,10 @@ login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
 The Greek eagle, samurai (the one in the screenshot) and ink portrait, and the Harbor
-Dark reaper, rendered in khaki and rust on stone grey. The subjects come from
-[HANCORE-linux](https://github.com/HANCORE-linux) (MIT). More from the upstream theme in cool-wallpapers, folder
+Dark reaper, rendered in khaki and rust on stone grey; those subjects come from
+[HANCORE-linux](https://github.com/HANCORE-linux) (MIT). Alongside them a city, a vivid
+geisha, a Hyundai blueprint, plain stripes and a sushi switch, in the same palette.
+More from the upstream theme in cool-wallpapers, folder
 [`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek) (MIT), all ink drawings on
 the same stone grey as the theme.
 
