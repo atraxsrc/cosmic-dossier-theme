@@ -23,21 +23,25 @@ From the Omarchy [The Greek](https://github.com/HANCORE-linux/omarchy-thegreek-t
 theme: manila-grey paper, dark olive, a rust accent. Text roles use the
 upstream's darker rust and a deeper red so everything reads at 4.5:1 or
 better on the window background; the brighter upstream orange stays for the
-window hint, the terminal cursor and btop highlights.
+terminal cursor and btop highlights. As in the original, the terminal is an
+opaque pane a step darker than the desktop, and the window border is a thin
+grey edge rather than an accent.
 
 | Role | Color | Hex |
 |------|-------|-----|
 | Background | ![#d0d0c8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) Stone | `#D0D0C8` |
 | Containers | ![#dcdcd4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) Paper / Card | `#DCDCD4` / `#E4E4DC` |
+| Terminal | ![#c7c7c0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) Pane | `#C7C7C0` |
 | Text | ![#242424](https://placehold.co/12x12/242424/242424.png) Ink | `#242424` |
 | Accent | ![#953b19](https://placehold.co/12x12/953b19/953b19.png) Rust | `#953B19` |
-| Highlight | ![#de6a41](https://placehold.co/12x12/de6a41/de6a41.png) Orange (borders, cursor) | `#DE6A41` |
+| Highlight | ![#de6a41](https://placehold.co/12x12/de6a41/de6a41.png) Orange (cursor, btop highlights) | `#DE6A41` |
 | Success | ![#51573b](https://placehold.co/12x12/51573b/51573b.png) Olive | `#51573B` |
 | Warning | ![#754e3e](https://placehold.co/12x12/754e3e/754e3e.png) Brown | `#754E3E` |
 | Error | ![#a80026](https://placehold.co/12x12/a80026/a80026.png) Red | `#A80026` |
 | Khaki | ![#43432b](https://placehold.co/12x12/43432b/43432b.png) Directories | `#43432B` |
 | Wine | ![#6b1f2f](https://placehold.co/12x12/6b1f2f/6b1f2f.png) Symlinks | `#6B1F2F` |
 | Muted | ![#59574d](https://placehold.co/12x12/59574d/59574d.png) Secondary text | `#59574D` |
+| Border | ![#6c6c64](https://placehold.co/12x12/6c6c64/6c6c64.png) Window hint | `#6C6C64` |
 | Dim | ![#6b7360](https://placehold.co/12x12/6b7360/6b7360.png) Comments | `#6B7360` |
 
 | Role | Dossier | Noir |
@@ -92,7 +96,7 @@ window hint, the terminal cursor and btop highlights.
 ├── assets
 │   ├── cursors/                 # cursor preview
 │   ├── screenshot.png           # README screenshot
-│   └── wallpaper.png            # the samurai on the bare desktop
+│   └── wallpaper.png            # the eagle on the bare desktop
 ├── backgrounds/                 # wallpapers, dossier-<subject>.png (see Icons and wallpaper)
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
@@ -108,7 +112,8 @@ This is a **Light** theme, so it goes in COSMIC's Light slot:
 
 Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/Dossier.ron`
 
-Accent is rust `#953B19`; the window hint border is the brighter `#DE6A41`.
+Accent is rust `#953B19`; the window hint border is the mid neutral `#6C6C64`,
+a thin grey edge like the Omarchy original instead of an accent ring.
 Use the `+` control if you want a custom swatch.
 
 Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
@@ -134,7 +139,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
 | Icons | Cosmic-Dossier-Rust |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
-| Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Dossier (light scheme) |
+| Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), opaque, no header bar, Dossier (light scheme) |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
 Cosmic-Dossier icons (see Icons below) and import the terminal scheme first, then:
@@ -158,9 +163,13 @@ The desktop `.ron` does not colour ANSI text.
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
 
-Ink text on stone grey; red for errors, olive for strings and success, rust in
-the yellow slot, khaki for directories, wine for cyan. Bright colours are
-deeper, dim colours lighter, so bold and dim still read on a light background.
+Ink text on an opaque pane `#C7C7C0`, a step darker than the desktop like the
+Omarchy original; red for errors, olive for strings and success, rust in the
+yellow slot, khaki for directories, wine for cyan. Bright colours are deeper,
+dim colours lighter, so bold and dim still read on a light background. On the
+pane rust, brown and muted land at 4.2 to 4.3:1, a little under the 4.5:1 the
+window background keeps; drop the `background` line from the scheme to get the
+window colour back.
 
 ---
 
@@ -253,8 +262,8 @@ lsd -l
 
 ### fastfetch
 
-COSMIC logo in rust, Hardware / Software / Age boxes in pale grey with khaki
-keys. `install.sh` backs up any existing `~/.config/fastfetch/config.jsonc`
+COSMIC logo in olive-black, Hardware / Software / Age boxes in pale grey with
+khaki keys. `install.sh` backs up any existing `~/.config/fastfetch/config.jsonc`
 to `config.jsonc.bak`.
 
 ```bash
@@ -281,7 +290,7 @@ run `:colorscheme dossier`.
 
 ### btop
 
-`btop/Dossier.theme`: stone background, dark olive boxes, orange highlights,
+`btop/Dossier.theme`: terminal background, dark olive boxes, orange highlights,
 meters ramp from olive through rust to red.
 
 ```bash
@@ -313,7 +322,7 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
-The Greek eagle, samurai (the one in the screenshot) and ink portrait, and the Harbor
+The Greek eagle (the one in the screenshot), samurai and ink portrait, and the Harbor
 Dark reaper, rendered in khaki and rust on stone grey; those subjects come from
 [HANCORE-linux](https://github.com/HANCORE-linux) (MIT). Alongside them a city, a vivid
 geisha, a Hyundai blueprint, plain stripes and a sushi switch, in the same palette.
@@ -323,7 +332,7 @@ the same stone grey as the theme.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
-![The samurai wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
+![The eagle wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
 ---
 

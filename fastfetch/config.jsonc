@@ -4,7 +4,7 @@
     "type": "file",
     "source": "~/.config/fastfetch/cosmic.txt",
     "color": {
-      "1": "38;2;149;59;25"
+      "1": "38;2;46;49;37"
     },
     "padding": {
       "top": 3,

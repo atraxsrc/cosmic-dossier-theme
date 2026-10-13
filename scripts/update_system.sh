@@ -3,7 +3,7 @@ set -eo pipefail
 
 # ─────────────────────────────────────────────
 #  Dossier palette (light terminal)
-#  bg:      #D0D0C8   fg:      #242424
+#  bg:      #C7C7C0   fg:      #242424   (terminal pane; window bg #D0D0C8)
 #  rust:    #953B19   olive:   #51573B
 #  brown:   #754E3E   red:     #A80026
 #  khaki:   #43432B   muted:   #59574D

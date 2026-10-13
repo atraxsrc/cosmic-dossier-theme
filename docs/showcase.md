@@ -21,7 +21,8 @@ Every text colour is checked against the window background `#D0D0C8`.
 | Wine, symlinks | `#6B1F2F` | 7.3:1 |
 
 Containers sit one step away from the background at `#DCDCD4`, which is
-what frosted glass blurs into.
+what frosted glass blurs into. The terminal is the exception: an opaque pane
+at `#C7C7C0`, a step darker than the desktop, as in the Omarchy original.
 
 ## Where the colours go
 
@@ -42,7 +43,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-Dossier** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-Dossier-Rust
-- [x] Wallpaper: `backgrounds/dossier-samurai.png`
+- [x] Wallpaper: `backgrounds/dossier-eagle.png`
 - [x] Screenshot for the README
 
 ## The baseline every rice shares

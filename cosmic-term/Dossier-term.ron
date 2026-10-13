@@ -1,6 +1,7 @@
 (
     name: "Dossier",
     foreground: "#242424",
+    background: "#C7C7C0",
     cursor: "#DE6A41",
     bright_foreground: "#151515",
     dim_foreground: "#59574D",
