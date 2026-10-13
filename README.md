@@ -333,7 +333,7 @@ More from the upstream theme, in [cool-wallpapers](https://github.com/atraxsrc/c
 | [`the-greek-bg3-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg3-3840x2160.jpg) | Ink samurai with a crow |
 | [`the-greek-bg2-3840x2160.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/omarchy/the-greek/the-greek-bg2-3840x2160.jpg) | Ink portrait, grey hair |
 
-`bg1-1` to `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
+`bg1-2` and `bg1-3` are variants of the eagle. Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
 ![The samurai wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
