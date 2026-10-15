@@ -92,7 +92,8 @@ grey edge rather than an accent.
 │   └── install.sh
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
-│   └── update_system.sh         # nala + flatpak, dark ANSI for a light terminal
+│   ├── update_system.sh         # nala + flatpak, dark ANSI for a light terminal
+│   └── switch.sh                # make this the active rice (see Switching rice)
 ├── zsh
 │   ├── dossier.zsh              # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
@@ -244,6 +245,15 @@ enough for a light terminal.
 ```bash
 chmod +x scripts/update_system.sh
 ./scripts/update_system.sh
+```
+
+### `switch.sh`
+
+Makes this the active rice, coming from any other `cosmic-*-theme` rice. See
+[Switching rice](#switching-rice).
+
+```bash
+./scripts/switch.sh
 ```
 
 ---
@@ -401,6 +411,57 @@ mkdir -p ~/.config/btop/themes && cp btop/Dossier.theme ~/.config/btop/themes/
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
 ```
+
+---
+
+## Switching rice
+
+The installers replace what they own (with a `*.bak` copy), but some things
+pile up instead: shell layers in `~/.zshrc`, LazyVim specs, the updater link and
+btop's theme setting. `scripts/switch.sh` makes Dossier the active rice, coming
+from any other `cosmic-*-theme` rice, and tidies those up. Every rice repo ships
+the same script.
+
+```bash
+./scripts/switch.sh               # switch, icons included
+./scripts/switch.sh --keep-icons  # leave the current icon theme alone
+```
+
+It backs up every file it replaces, then:
+
+- copies `cosmic/config/` (fonts, terminal look, icons) and turns light mode on.
+  The terminal scheme and icon theme are only replaced when the current one is
+  not already a Dossier variant, so a dimmer text variant or another icon colour
+  survives. Icons stay as they are until `./icons/install.sh` has run.
+- runs the fastfetch, lsd, Neovim and Claude Desktop installers and sets
+  btop's `color_theme`
+- moves every other rice's LazyVim spec from `~/.config/nvim/lua/plugins/` to
+  `~/.config/nvim/rice-off/` (LazyVim loads every spec there and the last
+  colorscheme wins); your own specs stay
+- comments out every other rice's `source` line in `~/.zshrc`, and
+  cosmic-ricing's `ricing/zsh/colors.zsh`, then uncomments Dossier's or adds it
+- points `~/update_system.sh` at this repo's updater
+- installs the Firefox userChrome / userContent
+
+The GUI steps it cannot do are printed at the end:
+
+1. Settings → Desktop → Appearance → Light → Import `cosmic/Dossier.ron`
+2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/Dossier-term.ron`
+3. Firefox: disable the old rice's add-on, enable [this one](https://addons.mozilla.org/en-US/firefox/addon/cosmic-dossier-theme/), restart Firefox
+4. Settings → Wallpaper → a file from `backgrounds/`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-noir`, Appearance → Light
+6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
+
+Skip 1 and 2 when that slot already holds Dossier. The first time on this rice,
+run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Dossier ↔ [Noir](https://github.com/atraxsrc/cosmic-noir-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
+
+Leaving Dossier is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
+puts the Pop cursor back.
 
 ---
 
