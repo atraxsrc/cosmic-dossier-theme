@@ -99,7 +99,7 @@ grey edge rather than an accent.
 ├── assets
 │   ├── cursors/                 # cursor preview
 │   ├── screenshot.png           # README screenshot
-│   └── wallpaper.png            # the eagle on the bare desktop
+│   └── wallpaper.png            # the ink portrait on the bare desktop
 ├── backgrounds/                 # wallpapers, dossier-<subject>.png (see Icons and wallpaper)
 ├── docs
 │   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
@@ -346,7 +346,7 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
-The Greek eagle (the one in the screenshot), samurai and ink portrait, and the Harbor
+The Greek eagle, samurai and ink portrait (the one in the screenshot), and the Harbor
 Dark reaper, rendered in khaki and rust on stone grey; those subjects come from
 [HANCORE-linux](https://github.com/HANCORE-linux) (MIT). Alongside them a city, a vivid
 geisha, a Hyundai blueprint, plain stripes and a sushi switch, in the same palette.
@@ -356,7 +356,7 @@ the same stone grey as the theme.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
-![The eagle wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
+![The ink portrait wallpaper on the Dossier desktop, panel only](assets/wallpaper.png)
 
 ---
 
