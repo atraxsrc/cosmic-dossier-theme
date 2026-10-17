@@ -1,0 +1,46 @@
+{
+  "name": "cosmic-noir-theme",
+  "displayName": "Cosmic Noir / Cosmic Dossier",
+  "description": "Dark and light colour themes from the COSMIC Noir / Dossier rice pair, syntax as in their Neovim schemes.",
+  "version": "1.1.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#171717",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-noir-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "cosmic",
+    "noir",
+    "dossier",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Noir",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cosmic-noir-color-theme.json"
+      },
+      {
+        "label": "Cosmic Dossier",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-dossier-color-theme.json"
+      }
+    ]
+  }
+}
