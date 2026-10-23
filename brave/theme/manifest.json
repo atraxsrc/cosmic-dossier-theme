@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Dossier",
+  "version": "1.0",
+  "description": "Stone-paper light theme from the COSMIC Dossier rice: olive icons, one rust accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [208, 208, 200],
+      "frame_inactive": [208, 208, 200],
+      "frame_incognito": [208, 208, 200],
+      "frame_incognito_inactive": [208, 208, 200],
+      "background_tab": [208, 208, 200],
+      "background_tab_inactive": [208, 208, 200],
+      "background_tab_incognito": [208, 208, 200],
+      "background_tab_incognito_inactive": [208, 208, 200],
+      "toolbar": [220, 220, 212],
+      "tab_text": [149, 59, 25],
+      "tab_background_text": [81, 87, 59],
+      "tab_background_text_inactive": [81, 87, 59],
+      "tab_background_text_incognito": [81, 87, 59],
+      "tab_background_text_incognito_inactive": [81, 87, 59],
+      "bookmark_text": [36, 36, 36],
+      "toolbar_button_icon": [81, 87, 59],
+      "omnibox_background": [228, 228, 220],
+      "omnibox_text": [36, 36, 36],
+      "ntp_background": [208, 208, 200],
+      "ntp_text": [36, 36, 36],
+      "ntp_link": [149, 59, 25]
+    }
+  }
+}
