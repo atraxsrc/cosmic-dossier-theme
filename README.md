@@ -21,10 +21,9 @@ shell, Firefox, Brave, cursor, wallpapers. The light half of a pair; the dark ha
 
 ## Palette
 
-From the Omarchy [The Greek](https://github.com/HANCORE-linux/omarchy-thegreek-theme)
-theme: manila-grey paper, dark olive, a rust accent. Text roles use the
-upstream's darker rust and a deeper red so everything reads at 4.5:1 or
-better on the window background; the brighter upstream orange stays for the
+From The Greek palette: manila-grey paper, dark olive, a rust accent.
+Text roles use the source's darker rust and a deeper red so everything reads at 4.5:1 or
+better on the window background; the brighter source orange stays for the
 terminal cursor and btop highlights. As in the original, the terminal is an
 opaque pane a step darker than the desktop, and the window border is a thin
 grey edge rather than an accent.
@@ -132,7 +131,7 @@ This is a **Light** theme, so it goes in COSMIC's Light slot:
 Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/Dossier.ron`
 
 Accent is rust ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19`; the window hint border is the mid neutral ![#6C6C64](https://placehold.co/12x12/6c6c64/6c6c64.png) `#6C6C64`,
-a thin grey edge like the Omarchy original instead of an accent ring.
+a thin grey edge like the original instead of an accent ring.
 Use the `+` control if you want a custom swatch.
 
 Frosted glass is on in the `.ron` at `frosted: Low` with an opacity table of
@@ -184,7 +183,7 @@ If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
 
 Ink text on an opaque pane ![#C7C7C0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) `#C7C7C0`, a step darker than the desktop like the
-Omarchy original; red for errors, olive for strings and success, rust in the
+original; red for errors, olive for strings and success, rust in the
 yellow slot, khaki for directories, wine for cyan. Bright colours are deeper,
 dim colours lighter, so bold and dim still read on a light background. On the
 pane rust, brown and muted land at 4.2 to 4.3:1, a little under the 4.5:1 the
@@ -440,12 +439,9 @@ login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `dossier-<subject>.png`:
 The Greek eagle, samurai and ink portrait (the one in the screenshot), and the Harbor
-Dark reaper, rendered in khaki and rust on stone grey; those subjects come from
-[HANCORE-linux](https://github.com/HANCORE-linux) (MIT). Alongside them a city, a vivid
+Dark reaper, rendered in khaki and rust on stone grey; those subjects are MIT-licensed
+originals. Alongside them a city, a vivid
 geisha, a Hyundai blueprint, plain stripes and a sushi switch, in the same palette.
-More from the upstream theme in cool-wallpapers, folder
-[`omarchy/the-greek/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/omarchy/the-greek) (MIT), all ink drawings on
-the same stone grey as the theme.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`, or one you downloaded.
 
@@ -571,10 +567,9 @@ puts the Pop cursor back.
 
 ## Credits
 
-- Palette and wallpapers: [omarchy-thegreek-theme](https://github.com/HANCORE-linux/omarchy-thegreek-theme)
-  by HANCORE-linux (MIT). This repo is a COSMIC port with contrast-adjusted
-  text colours; the upstream wallpapers are mirrored in cool-wallpapers, the
-  renders for this palette are in `backgrounds/`.
+- Palette and wallpapers: The Greek (MIT). This repo is a COSMIC port with
+  contrast-adjusted text colours; the renders for this palette are in
+  `backgrounds/`.
 - Dark half: [cosmic-noir-theme](https://github.com/atraxsrc/cosmic-noir-theme).
   Shared baseline (frosted glass, squared corners, fonts) from
   [cosmic-darkgold-theme](https://github.com/atraxsrc/cosmic-darkgold-theme).

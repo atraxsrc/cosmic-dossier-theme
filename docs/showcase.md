@@ -22,7 +22,7 @@ Every text colour is checked against the window background ![#D0D0C8](https://pl
 
 Containers sit one step away from the background at ![#DCDCD4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) `#DCDCD4`, which is
 what frosted glass blurs into. The terminal is the exception: an opaque pane
-at ![#C7C7C0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) `#C7C7C0`, a step darker than the desktop, as in the Omarchy original.
+at ![#C7C7C0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) `#C7C7C0`, a step darker than the desktop, as in the original.
 
 ## Where the colours go
 
