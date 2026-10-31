@@ -2,6 +2,8 @@
 
 # COSMIC · Dossier
 
+![Dossier palette](assets/palette.png)
+
 Pop!_OS 24.04 on COSMIC in stone grey, olive and rust: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. The light half of a pair; the dark half is
 [cosmic-noir-theme](https://github.com/atraxsrc/cosmic-noir-theme).
@@ -111,6 +113,7 @@ grey edge rather than an accent.
 │   └── install.sh
 ├── assets
 │   ├── cursors/                 # cursor preview
+│   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the ink portrait on the bare desktop
 ├── backgrounds/                 # wallpapers, dossier-<subject>.png (see Icons and wallpaper)
