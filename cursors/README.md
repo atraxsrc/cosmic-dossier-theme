@@ -15,13 +15,14 @@ All patched so they work in COSMIC's own apps.
 Each variant is a normal folder here (`Oxygen-Dossier-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
 
-The colours are made with [`recolour.py`](https://github.com/atraxsrc/cosmic-darkgold-theme/blob/master/cursors/recolour.py) from cosmic-darkgold-theme: every body pixel keeps
+The colours are made with [`recolour.py`](recolour.py) (the script from
+cosmic-darkgold-theme, plus `--spread` and `--glow`): every body pixel keeps
 its shading and takes the hue and saturation of the target colour, the white border,
 black outline and shadow stay as they are, and the COSMIC symlinks are carried over.
 Any coloured variant works as the base. To add a colour:
 
 ```bash
-../cosmic-darkgold-theme/cursors/recolour.py --base cursors/Oxygen-Dossier-Rust \
+./cursors/recolour.py --base cursors/Oxygen-Dossier-Rust \
   --out cursors/Oxygen-Dossier-Teal --name "Oxygen Dossier Teal" --colour '#2F8F8F' \
   --preview assets/cursors/Oxygen-Dossier-Teal.png --bg '#D0D0C8'
 ```
@@ -116,7 +117,7 @@ compositor got the variable. With `--user`, look in `~/.local/share/icons` inste
 - Cursor artwork: the original **Oxygen** cursor designs from the
   [KDE Oxygen project](https://invent.kde.org/plasma/oxygen), in the colour
   variants collected by [**wo2ni/Oxygen-Cursors**](https://github.com/wo2ni/Oxygen-Cursors).
-- This repo recolours them to the Dossier palette with [`recolour.py`](https://github.com/atraxsrc/cosmic-darkgold-theme/blob/master/cursors/recolour.py) from cosmic-darkgold-theme
+- This repo recolours them to the Dossier palette with [`recolour.py`](recolour.py)
   and adds the COSMIC symlinks and the scripts.
 - The upstream repo has **no LICENSE file**, so the licence of the artwork is
   not stated there. The MIT licence of this repo does not cover the cursor files;

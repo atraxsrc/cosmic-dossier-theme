@@ -112,6 +112,7 @@ grey edge rather than an accent.
 │   └── install.sh
 ├── assets
 │   ├── cursors/                 # cursor preview
+│   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the ink portrait on the bare desktop
@@ -189,6 +190,11 @@ dim colours lighter, so bold and dim still read on a light background. On the
 pane rust, brown and muted land at 4.2 to 4.3:1, a little under the 4.5:1 the
 window background keeps; drop the `background` line from the scheme to get the
 window colour back.
+
+If ink is not the plain text you want, there are five other variants
+with the same ANSI colours, from Muted ![#59574D](https://placehold.co/12x12/59574d/59574d.png) `#59574D` to
+Charcoal ![#383835](https://placehold.co/12x12/383835/383835.png) `#383835`. Previews and which to
+pick: [`cosmic-term/README.md`](cosmic-term/README.md).
 
 ---
 
