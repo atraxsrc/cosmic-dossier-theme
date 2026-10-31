@@ -29,27 +29,27 @@ grey edge rather than an accent.
 
 | Role | Color | Hex |
 |------|-------|-----|
-| Background | ![#d0d0c8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) Stone | `#D0D0C8` |
-| Containers | ![#dcdcd4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) Paper / Card | `#DCDCD4` / `#E4E4DC` |
-| Terminal | ![#c7c7c0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) Pane | `#C7C7C0` |
-| Text | ![#242424](https://placehold.co/12x12/242424/242424.png) Ink | `#242424` |
-| Accent | ![#953b19](https://placehold.co/12x12/953b19/953b19.png) Rust | `#953B19` |
-| Highlight | ![#de6a41](https://placehold.co/12x12/de6a41/de6a41.png) Orange (cursor, btop highlights) | `#DE6A41` |
-| Success | ![#51573b](https://placehold.co/12x12/51573b/51573b.png) Olive | `#51573B` |
-| Warning | ![#754e3e](https://placehold.co/12x12/754e3e/754e3e.png) Brown | `#754E3E` |
-| Error | ![#a80026](https://placehold.co/12x12/a80026/a80026.png) Red | `#A80026` |
-| Khaki | ![#43432b](https://placehold.co/12x12/43432b/43432b.png) Directories | `#43432B` |
-| Wine | ![#6b1f2f](https://placehold.co/12x12/6b1f2f/6b1f2f.png) Symlinks | `#6B1F2F` |
-| Muted | ![#59574d](https://placehold.co/12x12/59574d/59574d.png) Secondary text | `#59574D` |
-| Border | ![#6c6c64](https://placehold.co/12x12/6c6c64/6c6c64.png) Window hint | `#6C6C64` |
-| Dim | ![#6b7360](https://placehold.co/12x12/6b7360/6b7360.png) Comments | `#6B7360` |
+| Background | ![#d0d0c8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) Stone | ![#D0D0C8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) `#D0D0C8` |
+| Containers | ![#dcdcd4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) Paper / Card | ![#DCDCD4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) `#DCDCD4` / ![#E4E4DC](https://placehold.co/12x12/e4e4dc/e4e4dc.png) `#E4E4DC` |
+| Terminal | ![#c7c7c0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) Pane | ![#C7C7C0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) `#C7C7C0` |
+| Text | ![#242424](https://placehold.co/12x12/242424/242424.png) Ink | ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` |
+| Accent | ![#953b19](https://placehold.co/12x12/953b19/953b19.png) Rust | ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` |
+| Highlight | ![#de6a41](https://placehold.co/12x12/de6a41/de6a41.png) Orange (cursor, btop highlights) | ![#DE6A41](https://placehold.co/12x12/de6a41/de6a41.png) `#DE6A41` |
+| Success | ![#51573b](https://placehold.co/12x12/51573b/51573b.png) Olive | ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` |
+| Warning | ![#754e3e](https://placehold.co/12x12/754e3e/754e3e.png) Brown | ![#754E3E](https://placehold.co/12x12/754e3e/754e3e.png) `#754E3E` |
+| Error | ![#a80026](https://placehold.co/12x12/a80026/a80026.png) Red | ![#A80026](https://placehold.co/12x12/a80026/a80026.png) `#A80026` |
+| Khaki | ![#43432b](https://placehold.co/12x12/43432b/43432b.png) Directories | ![#43432B](https://placehold.co/12x12/43432b/43432b.png) `#43432B` |
+| Wine | ![#6b1f2f](https://placehold.co/12x12/6b1f2f/6b1f2f.png) Symlinks | ![#6B1F2F](https://placehold.co/12x12/6b1f2f/6b1f2f.png) `#6B1F2F` |
+| Muted | ![#59574d](https://placehold.co/12x12/59574d/59574d.png) Secondary text | ![#59574D](https://placehold.co/12x12/59574d/59574d.png) `#59574D` |
+| Border | ![#6c6c64](https://placehold.co/12x12/6c6c64/6c6c64.png) Window hint | ![#6C6C64](https://placehold.co/12x12/6c6c64/6c6c64.png) `#6C6C64` |
+| Dim | ![#6b7360](https://placehold.co/12x12/6b7360/6b7360.png) Comments | ![#6B7360](https://placehold.co/12x12/6b7360/6b7360.png) `#6B7360` |
 
 | Role | Dossier | Noir |
 |------|---------|------|
-| Background | `#D0D0C8` | `#171717` |
-| Text | `#242424` | `#CCD0CF` |
-| Accent | `#953B19` | `#F25623` |
-| Success | `#51573B` | `#88A57D` |
+| Background | ![#D0D0C8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) `#D0D0C8` | ![#171717](https://placehold.co/12x12/171717/171717.png) `#171717` |
+| Text | ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` | ![#CCD0CF](https://placehold.co/12x12/ccd0cf/ccd0cf.png) `#CCD0CF` |
+| Accent | ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` | ![#F25623](https://placehold.co/12x12/f25623/f25623.png) `#F25623` |
+| Success | ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` | ![#88A57D](https://placehold.co/12x12/88a57d/88a57d.png) `#88A57D` |
 
 ---
 
@@ -128,7 +128,7 @@ This is a **Light** theme, so it goes in COSMIC's Light slot:
 
 Settings → Desktop → Appearance → **Light** → **Import** → `cosmic/Dossier.ron`
 
-Accent is rust `#953B19`; the window hint border is the mid neutral `#6C6C64`,
+Accent is rust ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19`; the window hint border is the mid neutral ![#6C6C64](https://placehold.co/12x12/6c6c64/6c6c64.png) `#6C6C64`,
 a thin grey edge like the Omarchy original instead of an accent ring.
 Use the `+` control if you want a custom swatch.
 
@@ -180,7 +180,7 @@ The desktop `.ron` does not colour ANSI text.
 If a profile is set as default, set the scheme on that profile too or the
 dropdown will look like it did nothing.
 
-Ink text on an opaque pane `#C7C7C0`, a step darker than the desktop like the
+Ink text on an opaque pane ![#C7C7C0](https://placehold.co/12x12/c7c7c0/c7c7c0.png) `#C7C7C0`, a step darker than the desktop like the
 Omarchy original; red for errors, olive for strings and success, rust in the
 yellow slot, khaki for directories, wine for cyan. Bright colours are deeper,
 dim colours lighter, so bold and dim still read on a light background. On the
@@ -420,7 +420,7 @@ cp btop/Dossier.theme ~/.config/btop/themes/
 Icons: **Cosmic-Dossier**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Rust** `#953B19` (default), **Olive** `#51573B` and **Ink** `#242424` with orange symbols.
+three colors: **Rust** ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` (default), **Olive** ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` and **Ink** ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` with orange symbols.
 
 ![Cosmic-Dossier folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-Dossier.png)
 

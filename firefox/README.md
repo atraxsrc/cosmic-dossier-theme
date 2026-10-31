@@ -10,17 +10,17 @@ Stylesheets:
 
 | Hex       | Role                      |
 |-----------|---------------------------|
-| `#D0D0C8` | Frame, page chrome        |
-| `#DCDCD4` | Panels, menus             |
-| `#D1C4B8` | Menu hover row (rust tinted into the panel) |
-| `#CCB9AB` | Menu pressed row          |
-| `#BCBCB4` | Separators, menu border   |
-| `#953B19` | Accent, URL bar border, hover rail |
-| `#754E3E` | Button hover (brown)      |
-| `#51573B` | New tab accent, active    |
-| `#43432B` | Menu text and links (khaki, where DarkGold uses cream) |
-| `#242424` | Hover text                |
-| `#E4E4DC` | Text on rust              |
+| ![#D0D0C8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) `#D0D0C8` | Frame, page chrome        |
+| ![#DCDCD4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) `#DCDCD4` | Panels, menus             |
+| ![#D1C4B8](https://placehold.co/12x12/d1c4b8/d1c4b8.png) `#D1C4B8` | Menu hover row (rust tinted into the panel) |
+| ![#CCB9AB](https://placehold.co/12x12/ccb9ab/ccb9ab.png) `#CCB9AB` | Menu pressed row          |
+| ![#BCBCB4](https://placehold.co/12x12/bcbcb4/bcbcb4.png) `#BCBCB4` | Separators, menu border   |
+| ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` | Accent, URL bar border, hover rail |
+| ![#754E3E](https://placehold.co/12x12/754e3e/754e3e.png) `#754E3E` | Button hover (brown)      |
+| ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` | New tab accent, active    |
+| ![#43432B](https://placehold.co/12x12/43432b/43432b.png) `#43432B` | Menu text and links (khaki, where DarkGold uses cream) |
+| ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` | Hover text                |
+| ![#E4E4DC](https://placehold.co/12x12/e4e4dc/e4e4dc.png) `#E4E4DC` | Text on rust              |
 
 ## Structure
 
@@ -49,7 +49,7 @@ Same colour keys and roles as DarkGold's Firefox theme and Noir: icons take the
 calm accent (olive here, sage in Noir, gold in DarkGold), and everything
 "hot" (tab line, pressed button, menu and sidebar selection, loading) takes
 the loud one (rust here, orange in Noir, coral in DarkGold). The brighter
-upstream orange `#DE6A41` is too faint for a ring on the paper field (2.6:1),
+upstream orange ![#DE6A41](https://placehold.co/12x12/de6a41/de6a41.png) `#DE6A41` is too faint for a ring on the paper field (2.6:1),
 so rust does that job. One extra key, `toolbar_field_border_focus`, pins the
 focused URL bar ring to rust so it does not fall back to the desktop accent
 when `widget.non-native-theme.use-theme-accent` is on (the Firefox default on
@@ -60,16 +60,16 @@ line clear 3:1.
 
 | Hex       | Where in the theme                          |
 |-----------|---------------------------------------------|
-| `#D0D0C8` | Frame, new tab                              |
-| `#DCDCD4` | Toolbar, menus                              |
-| `#E4E4DC` | URL bar field, text on rust selections      |
-| `#C4C4BC` | Button hover                                |
-| `#BCBCB4` | Sidebar border                              |
-| `#98988F` | Menu border                                 |
-| `#242424` | Body text                                   |
-| `#59574D` | Inactive tab text                           |
-| `#51573B` | Icons                                       |
-| `#953B19` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
+| ![#D0D0C8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) `#D0D0C8` | Frame, new tab                              |
+| ![#DCDCD4](https://placehold.co/12x12/dcdcd4/dcdcd4.png) `#DCDCD4` | Toolbar, menus                              |
+| ![#E4E4DC](https://placehold.co/12x12/e4e4dc/e4e4dc.png) `#E4E4DC` | URL bar field, text on rust selections      |
+| ![#C4C4BC](https://placehold.co/12x12/c4c4bc/c4c4bc.png) `#C4C4BC` | Button hover                                |
+| ![#BCBCB4](https://placehold.co/12x12/bcbcb4/bcbcb4.png) `#BCBCB4` | Sidebar border                              |
+| ![#98988F](https://placehold.co/12x12/98988f/98988f.png) `#98988F` | Menu border                                 |
+| ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` | Body text                                   |
+| ![#59574D](https://placehold.co/12x12/59574d/59574d.png) `#59574D` | Inactive tab text                           |
+| ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` | Icons                                       |
+| ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
 
 Build the package:
 
@@ -115,7 +115,7 @@ To undo: delete the two files from the profile's `chrome/` folder and restart.
 - **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables leak
   into the toolbar and blank the URL bar. They stay on the popup elements.
 - **Context menus do not get an extra element border.** A second stroke made
-  the right-click panel look detached. Hover is a rust-tinted `#D1C4B8` row
+  the right-click panel look detached. Hover is a rust-tinted ![#D1C4B8](https://placehold.co/12x12/d1c4b8/d1c4b8.png) `#D1C4B8` row
   with a 3px rust rail on the left, not a full ring.
 - **Native menu styling is switched off** (`appearance: none`) on menus and
   menu rows. Without it the COSMIC/GTK hover paints over the colours above.

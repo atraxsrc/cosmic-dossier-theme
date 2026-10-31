@@ -6,11 +6,11 @@ rice's icon colours: one per folder colour of the
 [Cosmic-Dossier](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Rust**, **Olive**, **Ink**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#D0D0C8` | Goes with |
+| Variant | Preview | Body | Contrast on ![#D0D0C8](https://placehold.co/12x12/d0d0c8/d0d0c8.png) `#D0D0C8` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Rust** (default) | ![](../assets/cursors/Oxygen-Dossier-Rust.png) | `#953B19` | 4.6:1 | Rust folders |
-| **Olive** | ![](../assets/cursors/Oxygen-Dossier-Olive.png) | `#51573B` | 4.9:1 | Olive folders |
-| **Ink** | ![](../assets/cursors/Oxygen-Dossier-Ink.png) | `#242424` | 10.0:1 | Ink folders |
+| **Rust** (default) | ![](../assets/cursors/Oxygen-Dossier-Rust.png) | ![#953B19](https://placehold.co/12x12/953b19/953b19.png) `#953B19` | 4.6:1 | Rust folders |
+| **Olive** | ![](../assets/cursors/Oxygen-Dossier-Olive.png) | ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` | 4.9:1 | Olive folders |
+| **Ink** | ![](../assets/cursors/Oxygen-Dossier-Ink.png) | ![#242424](https://placehold.co/12x12/242424/242424.png) `#242424` | 10.0:1 | Ink folders |
 
 Each variant is a normal folder here (`Oxygen-Dossier-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
