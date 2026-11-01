@@ -1,0 +1,6 @@
+name = "Dossier"
+mode = "light"
+theme = "Dossier.ron"
+pair = "noir"
+terminal = "Dossier-term.ron"
+btop = "Dossier"
