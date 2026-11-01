@@ -1,0 +1,56 @@
+# Dossier for delta (the git diff pager), part of cosmic-dossier-theme (MIT).
+# Removed lines in the error colour, added lines in the success colour, both
+# on the editor's container; changed words on a solid error / success block
+# with the editor background as text (the same as DiffAdd / DiffDelete /
+# DiffText in Neovim). Code inside the diff uses the bat Dossier theme, so run
+# ./bat/install.sh first.
+#
+# Install: ./delta/install.sh puts this in ~/.config/delta/, then add to
+# ~/.gitconfig (the installer prints this, it never edits ~/.gitconfig):
+#   [include]
+#       path = ~/.config/delta/dossier.gitconfig
+# and, if delta is not your pager yet:
+#   [core]
+#       pager = delta
+#   [interactive]
+#       diffFilter = delta --color-only
+
+[delta]
+    features = dossier
+
+[delta "dossier"]
+    light = true
+    syntax-theme = Dossier
+    navigate = true
+    line-numbers = true
+
+    file-style = bold "#8E3818"
+    file-decoration-style = "#ACACA6" ul
+    hunk-header-style = file line-number syntax
+    hunk-header-decoration-style = "#ACACA6" box
+    hunk-header-file-style = "#555349"
+    hunk-header-line-number-style = "#43432B"
+
+    minus-style = "#A80026" "#D0D0C8"
+    minus-emph-style = bold "#C7C7C0" "#A80026"
+    minus-non-emph-style = "#A80026" "#D0D0C8"
+    plus-style = "#51573B" "#D0D0C8"
+    plus-emph-style = bold "#C7C7C0" "#51573B"
+    plus-non-emph-style = "#51573B" "#D0D0C8"
+    zero-style = syntax
+    whitespace-error-style = "#C7C7C0" "#754E3E"
+
+    line-numbers-left-style = "#ACACA6"
+    line-numbers-right-style = "#ACACA6"
+    line-numbers-minus-style = "#A80026"
+    line-numbers-plus-style = "#51573B"
+    line-numbers-zero-style = "#6B7360"
+
+    commit-style = bold "#43432B"
+    commit-decoration-style = "#ACACA6" box
+    blame-palette = "#C7C7C0 #D0D0C8 #BBBBB4"
+    blame-code-style = syntax
+    merge-conflict-begin-symbol = ▼
+    merge-conflict-end-symbol = ▲
+    merge-conflict-ours-diff-header-style = bold "#51573B"
+    merge-conflict-theirs-diff-header-style = bold "#754E3E"

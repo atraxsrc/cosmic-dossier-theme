@@ -1,0 +1,45 @@
+# Dossier for Ghostty, part of cosmic-dossier-theme (MIT).
+# Colours follow the COSMIC Terminal scheme (cosmic-term/).
+#
+# Install: ./ghostty/install.sh puts this in ~/.config/ghostty/themes/, then in
+# ~/.config/ghostty/config:
+#   theme = Dossier
+# or, with the Noir half installed too, following COSMIC's Dark / Light toggle:
+#   theme = dark:Noir,light:Dossier
+
+background = #C7C7C0
+foreground = #242424
+
+cursor-color = #DE6A41
+cursor-text = #C7C7C0
+
+selection-background = #ACACA6
+selection-foreground = #242424
+
+split-divider-color = #ACACA6
+unfocused-split-fill = #C7C7C0
+
+# black
+palette = 0=#2E3125
+palette = 8=#383835
+# red
+palette = 1=#A80026
+palette = 9=#DB0030
+# green
+palette = 2=#51573B
+palette = 10=#2E3125
+# yellow
+palette = 3=#953B19
+palette = 11=#DE6A41
+# blue
+palette = 4=#43432B
+palette = 12=#3E3D31
+# magenta
+palette = 5=#754E3E
+palette = 13=#5A3A2E
+# cyan
+palette = 6=#6B1F2F
+palette = 14=#4F1622
+# white
+palette = 7=#59574D
+palette = 15=#6B7360
