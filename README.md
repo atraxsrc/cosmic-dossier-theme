@@ -12,6 +12,7 @@ shell, Firefox, Brave, cursor, wallpapers. The light half of a pair; the dark ha
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-51573b?style=for-the-badge)
 ![Dossier](https://img.shields.io/badge/Theme-Dossier-d0d0c8?style=for-the-badge&labelColor=953b19)
 ![Firefox](https://img.shields.io/badge/Firefox-Dossier-953b19?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-953b19?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-59574d?style=for-the-badge)
 
 </div>
