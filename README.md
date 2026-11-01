@@ -131,7 +131,7 @@ grey edge rather than an accent.
 │   ├── Dossier.conf             # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -509,8 +509,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.dossier]` and used by name: the directory in ![#555349](https://placehold.co/12x12/555349/555349.png) `#555349`,
 the branch in ![#43432B](https://placehold.co/12x12/43432b/43432b.png) `#43432B`, ![#754E3E](https://placehold.co/12x12/754e3e/754e3e.png) `#754E3E` for a dirty tree, a ![#51573B](https://placehold.co/12x12/51573b/51573b.png) `#51573B` prompt
-character that turns ![#A80026](https://placehold.co/12x12/a80026/a80026.png) `#A80026` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#A80026](https://placehold.co/12x12/a80026/a80026.png) `#A80026` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/dossier.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
