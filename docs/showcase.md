@@ -43,7 +43,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-Dossier** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-Dossier-Rust
-- [x] Wallpaper: `backgrounds/dossier-eagle.png`
+- [x] Wallpaper: `backgrounds/dossier-anime.png`
 - [x] Screenshot for the README
 
 ## The baseline every rice shares
